@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
   Home,
   Error,
@@ -9,9 +9,9 @@ import {
   ProtectedRoute,
   ForgotPassword,
   ResetPassword,
-} from './pages';
-import Navbar from './components/Navbar';
-import { useGlobalContext } from './context';
+} from "./pages";
+import Navbar from "./components/Navbar";
+import { useGlobalContext } from "./context";
 function App() {
   const { isLoading } = useGlobalContext();
   if (isLoading) {
