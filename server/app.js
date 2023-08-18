@@ -40,9 +40,8 @@ app.use(cors());
 app.use(xss());
 app.use(mongoSanitize());
 
-if (process.env.NODE_ENV === "development") {
-  app.use(morgan("dev"));
-}
+app.use(morgan("dev"));
+
 app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET));
 
